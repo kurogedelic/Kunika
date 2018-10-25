@@ -1,4 +1,4 @@
-# ![Kunika](https://kurogedelic.github.io/Kunika/)
+# [Kunika](https://kurogedelic.github.io/Kunika/)
 Kunika is Neo-Geometric font.
 
 **Important: Kunika is Alpha Version**
