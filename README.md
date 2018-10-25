@@ -2,7 +2,7 @@
 Kunika is Neo-Geometric font.
 Recommended to use for Heading and Logo designs.
 
-[![Glyphs show case](docs/assets/kunika-sets-2018-10-25 13.33.21.png)]
+![Glyphs show case](docs/assets/kunika-sets-2018-10-25 13.33.21.png)
 
 ## Family
 + Regular
