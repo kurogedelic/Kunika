@@ -1,0 +1,422 @@
+@font-face
+  font-family: "Kunika-local"
+  font-weight: 500
+  src: url("../dist/Kunika.otf") format("opentype")
+
+@font-face
+  font-family: "Kunika-local"
+  font-weight: 300
+  src: url("../dist/Kunika-Light.otf") format("opentype")
+
+// https://hihayk.github.io/scale/#4/6/89/99/360/-360/100/100/aaa/170/170/170　
+$GROBAL_COLOR_RED: #ff3636
+$GROBAL_COLOR_BLUE: #227fff
+$GROBAL_COLOR_GREEN: #01c764
+$GROBAL_COLOR_SKY: skyblue
+$GROBAL_COLOR_ORANGE: orange
+$GROBAL_COLOR_BLACK: black
+$GROBAL_COLOR_WHITE: white
+$GROBAL_COLOR_GRAY: gray
+$BUTTON_DEFAULT_TXT_COLOR_STATIC: #f8f5ef
+$BUTTON_ROLED_TXT_COLOR_STATIC: #fff
+$BUTTON_DEFAULT_BG_COLOR_STATIC: #333
+$BUTTON_DEFAULT_BG_COLOR_HOVER: rgba($GROBAL_COLOR_BLACK, 0.2)
+$BUTTON_DEFAULT_BG_COLOR_ACTIVE: rgba($GROBAL_COLOR_BLACK, 0.3)
+$BUTTON_PRIMARY_BG_COLOR_STATIC: lighten($GROBAL_COLOR_BLUE, 3%)
+$BUTTON_PRIMARY_BG_COLOR_HOVER: lighten($GROBAL_COLOR_BLUE, 13%)
+$BUTTON_PRIMARY_BG_COLOR_ACTIVE: lighten($GROBAL_COLOR_BLUE, 21%)
+$BUTTON_SECONDARY_BG_COLOR_STATIC: rgba($GROBAL_COLOR_WHITE, 0.8)
+$BUTTON_SECONDARY_BG_COLOR_HOVER: rgba($GROBAL_COLOR_WHITE, 0.7)
+$BUTTON_SECONDARY_BG_COLOR_ACTIVE: rgba($GROBAL_COLOR_WHITE, 0.6)
+$BUTTON_NEGATIVE_BG_COLOR_STATIC: rgba($GROBAL_COLOR_BLACK, 0.8)
+$BUTTON_NEGATIVE_BG_COLOR_HOVER: rgba($GROBAL_COLOR_BLACK, 0.7)
+$BUTTON_NEGATIVE_BG_COLOR_ACTIVE: rgba($GROBAL_COLOR_BLACK, 0.6)
+$BUTTON_ERROR_BG_COLOR_STATIC: lighten($GROBAL_COLOR_RED, 3%)
+$BUTTON_ERROR_BG_COLOR_HOVER: lighten($GROBAL_COLOR_RED, 13%)
+$BUTTON_ERROR_BG_COLOR_ACTIVE: lighten($GROBAL_COLOR_RED, 21%)
+$BUTTON_SUCC_BG_COLOR_STATIC: lighten($GROBAL_COLOR_GREEN, 3%)
+$BUTTON_SUCC_BG_COLOR_HOVER: lighten($GROBAL_COLOR_GREEN, 13%)
+$BUTTON_SUCC_BG_COLOR_ACTIVE: lighten($GROBAL_COLOR_GREEN, 21%)
+$BUTTON_DEFAULT_BORDER_RADIUS: 0.3em
+$INPUT_DEFAULT_TXT_COLOR_STATIC: #333
+$INPUT_ROLED_TXT_COLOR_STATIC: #fff
+$INPUT_DEFAULT_BG_COLOR_STATIC: rgba($GROBAL_COLOR_BLACK, 0)
+$INPUT_DEFAULT_BG_COLOR_HOVER: rgba($GROBAL_COLOR_BLACK, 0.2)
+$INPUT_DEFAULT_BG_COLOR_ACTIVE: rgba($GROBAL_COLOR_BLACK, 0.3)
+$INPUT_DEFAULT_BORDER_RADIUS: $BUTTON_DEFAULT_BORDER_RADIUS
+$MAIN-BACKGROUND-COLOR: white
+$MAIN-TERTIARY-COLOR: #333
+
+=dont-select
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+=text-truncate
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+=de-aparnc
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+=backface-hidden
+  -webkit-backface-visibility: hidden
+  -moz-backface-visibility: hidden
+  -ms-backface-visibility: hidden
+  -o-backface-visibility: hidden
+  backface-visibility: hidden
+
+article,
+aside,
+backquote,
+details,
+div,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary,
+ul
+  display: block
+  margin: 0
+  padding: 0
+
+button,
+input,
+select,
+textarea
+  display: block
+  margin: 0
+  padding: 0
+  background: none
+  border: 0
+  box-sizing: border-box
+  color: inherit
+  font: inherit
+  line-height: inherit
+  overflow: visible
+  vertical-align: inherit
+
+code,
+kbd,
+pre,
+samp
+  font-family: monospace, monospace
+
+b,
+strong
+  font-weight: bold
+
+small
+  font-size: 0.5em
+
+a
+  -webkit-text-decoration-skip: objects
+  text-decoration: none
+
+a:active,
+a:hover
+  outline: none
+
+img
+  border-style: none
+
+svg:not(:root)
+  overflow: hidden
+
+\::-moz-selection
+  background-color: #b3d4fc
+  color: #000
+  text-shadow: none
+
+\::selection
+  background-color: #b3d4fc
+  color: #000
+  text-shadow: none
+
+html
+  box-sizing: border-box
+  overflow-y: scroll
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  -webkit-font-smoothing: antialiased
+  width: 100%
+  height: 100%
+  font-family: "Kunika-local"
+  font-size: 21px
+
+body
+  line-height: 1.47059
+  vertical-align: middle
+  font-weight: 400
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+  background-color: #f8f5ef
+  color: #1f1a11
+
+h1
+  font-size: 2.3em
+  font-weight: 300
+  margin: 0.5em 0 0
+
+  @media screen and (max-width: 55rem)
+    font-size: 2em
+
+h2
+  font-size: 1.3em
+  font-weight: 500
+  padding: 0.5em 0
+  margin: 1em 0 0 .5em
+
+  @media screen and (max-width: 55rem)
+    font-size: 1.3em
+
+h3
+  font-size: 1.3em
+  font-weight: 600
+  margin: 1em 0 0.5em
+  text-transform: uppercase
+
+.btn
+  +backface-hidden
+
+  font-size: 0.8em
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  color: $BUTTON_DEFAULT_TXT_COLOR_STATIC
+  box-shadow: inset 0 0 0 1px rgba($BUTTON_DEFAULT_TXT_COLOR_STATIC, 0.1)
+  background-color: $BUTTON_DEFAULT_BG_COLOR_STATIC
+  border-radius: $BUTTON_DEFAULT_BORDER_RADIUS
+  padding: 0.2em 0.5em
+  transition: transform 0.1s ease
+
+.btn:hover
+  cursor: pointer
+  background-color: $BUTTON_DEFAULT_BG_COLOR_HOVER
+
+.btn:active
+  transform: scale(0.98)
+  background-color: $BUTTON_DEFAULT_BG_COLOR_ACTIVE
+
+.btn--primary
+  color: $BUTTON_ROLED_TXT_COLOR_STATIC
+  background-color: $BUTTON_PRIMARY_BG_COLOR_STATIC
+
+  &:hover
+    background-color: $BUTTON_PRIMARY_BG_COLOR_HOVER
+
+  &:active
+    background-color: $BUTTON_PRIMARY_BG_COLOR_ACTIVE
+
+.btn--secondary
+  background-color: $BUTTON_SECONDARY_BG_COLOR_STATIC
+
+  &:hover
+    background-color: $BUTTON_SECONDARY_BG_COLOR_HOVER
+
+  &:active
+    background-color: $BUTTON_SECONDARY_BG_COLOR_ACTIVE
+
+.btn--negative
+  color: $BUTTON_ROLED_TXT_COLOR_STATIC
+  background-color: $BUTTON_NEGATIVE_BG_COLOR_STATIC
+
+  &:hover
+    background-color: $BUTTON_NEGATIVE_BG_COLOR_HOVER
+
+  &:active
+    background-color: $BUTTON_NEGATIVE_BG_COLOR_ACTIVE
+
+.btn--error
+  color: $BUTTON_ROLED_TXT_COLOR_STATIC
+  background-color: $BUTTON_ERROR_BG_COLOR_STATIC
+
+  &:hover
+    background-color: $BUTTON_ERROR_BG_COLOR_HOVER
+
+  &:active
+    background-color: $BUTTON_ERROR_BG_COLOR_ACTIVE
+
+.btn--success
+  color: $BUTTON_ROLED_TXT_COLOR_STATIC
+  background-color: $BUTTON_SUCC_BG_COLOR_STATIC
+
+  &:hover
+    background-color: $BUTTON_SUCC_BG_COLOR_HOVER
+
+  &:active
+    background-color: $BUTTON_SUCC_BG_COLOR_ACTIVE
+
+.btn--primary
+  color: $BUTTON_ROLED_TXT_COLOR_STATIC
+  background-color: $BUTTON_PRIMARY_BG_COLOR_STATIC
+
+  &:hover
+    background-color: $BUTTON_PRIMARY_BG_COLOR_HOVER
+
+  &:active
+    background-color: $BUTTON_PRIMARY_BG_COLOR_ACTIVE
+
+.btn-grp
+  display: inline-flex
+
+  .btn,
+  .inpt
+    border-radius: 0
+    margin: 0 0.5px
+
+    &:first-child
+      border-radius: $BUTTON_DEFAULT_BORDER_RADIUS 0 0 $BUTTON_DEFAULT_BORDER_RADIUS
+      margin: 0 0.5px 0 0
+
+    &:last-child
+      border-radius: 0 $BUTTON_DEFAULT_BORDER_RADIUS $BUTTON_DEFAULT_BORDER_RADIUS 0
+      margin: 0 0 0 0.5px
+
+.inpt
+  +backface-hidden
+
+  font-size: 0.8em
+  box-shadow: inset 0 0 0 1px rgba($INPUT_DEFAULT_TXT_COLOR_STATIC, 0.3)
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  color: $INPUT_DEFAULT_TXT_COLOR_STATIC
+  background-color: $INPUT_DEFAULT_BG_COLOR_STATIC
+  border-radius: $INPUT_DEFAULT_BORDER_RADIUS
+  padding: 0.2em 0.5em
+  transition: transform 0.1s ease
+
+.inpt-grp
+  display: block
+  margin-bottom: 0.5rem
+
+.inpt-grp--label-upside
+  position: relative
+
+  .inpt-grp_label
+    top: 0
+    left: 0
+    display: block
+
+.card
+  background-color: #fff
+  padding: 1rem
+
+.h--rounded
+  border-radius: 100vw
+
+// f
+// f
+
+.flexbox
+  display: flex
+
+  &.flexbox--column
+    flex-direction: column
+
+  &.flexbox--center
+    justify-content: center
+
+  .flexbox-item
+    &.flexbox-item--full
+      flex: 1
+
+// c
+.jumbotron
+  background-color: #aaa
+
+// l
+.container
+
+.section
+  &.section--invert
+    color: #ebe7de
+    background-color: #29251d
+
+  .section--content
+    max-width: 55rem
+    padding: 0 1rem
+    margin: auto
+
+.hero
+  text-align: left
+
+.project-title
+  position: relative
+  display: inline-block
+  line-height: 1
+  font-weight: 500
+
+.san
+  font-family: -apple-system
+  font-weight: 500
+
+.typecase
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+
+.typeface
+  padding: 0.3rem
+  margin-right: 0.3rem
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 2em
+
+footer
+  max-width: 55rem
+  padding: 0 1rem
+  margin: auto
+
+.txt--tor
+  font-size: 1.5em
+  line-height: 1
+
+.txt--big
+  font-size: 2em
+  line-height: 1
+
+.txt--huge
+  font-size: 3em
+  line-height: 1
+
+.txt--ultra-huge
+  font-size: 5em
+  line-height: 1
+
+.txt--light
+  font-weight: 300
+
+.dir--left
+  text-align: left
+
+.dir--center
+  text-align: center
+
+.dir--right
+  text-align: right
+
+._dlig-1
+  font-feature-settings: 'dlig' 1
+
+._dlig-2
+  font-feature-settings: 'dlig' 2
+
+._alt-1
+  font-feature-settings: 'aalt' 1
+
+._alt-2
+  font-feature-settings: 'aalt' 2
