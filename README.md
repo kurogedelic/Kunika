@@ -13,10 +13,13 @@ Recommended to use for Heading and Logo designs.
 
 ## ToDo
 + **Fix Font Size**
++ **Fix Kerning**
 + Add Slash Zero
 + Add Italic
 + Add Tabular/Alternative Numeric Set
-+ Add et ls Th TT tt fl fj ffj fh ffh fk ft ſl ſſ ſß ligatures
++ Add et ls Th TT tt fl fj fh fk ft ſl ſſ ſß ligatures
++ Add 
+
 + Add Cyrillic set
 + Add Greek set
 
