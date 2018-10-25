@@ -1,7 +1,11 @@
 # [Kunika](https://kurogedelic.github.io/Kunika/)
 Kunika is Neo-Geometric font.
 
+# [Demo Page](https://kurogedelic.github.io/Kunika/)
+
+```json
 **Important: Kunika is Alpha Version**
+```
 
 Recommended to use for Heading and Logo designs.
 
