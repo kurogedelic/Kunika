@@ -4,7 +4,7 @@ Kunika is Neo-Geometric font.
 [Demo Page](https://kurogedelic.github.io/Kunika/)
 
 ```diff
-**Important: Kunika is Alpha Version**
+- Important: Kunika is Alpha Version
 ```
 
 Recommended to use for Heading and Logo designs.
