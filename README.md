@@ -1,5 +1,8 @@
-# Kunika
+# (Kunika)[https://kurogedelic.github.io/Kunika/]
 Kunika is Neo-Geometric font.
+
+**Important: Kunika is Alpha Version**
+
 Recommended to use for Heading and Logo designs.
 
 ![Glyphs show case](docs/assets/kunika-showcase.png)
@@ -9,7 +12,7 @@ Recommended to use for Heading and Logo designs.
 + Light
 
 ## ToDo
-+ ** Fix Font Size **
++ **Fix Font Size**
 + Add Slash Zero
 + Add Italic
 + Add Tabular/Alternative Numeric Set
