@@ -13,16 +13,15 @@ Recommended to use for Heading and Logo designs.
 
 ## Family
 + Regular
-+ Light
++ (Light) (Soon)
 
 ## ToDo
-+ **Fix Font Size**
++ ~~Fix Font Size~~
 + **Fix Kerning**
 + Add Slash Zero
 + Add Italic
 + Add Tabular/Alternative Numeric Set
 + Add et ls Th TT tt fl fj fh fk ft ſl ſſ ſß ligatures
-+ Add 
 
 + Add Cyrillic set
 + Add Greek set
@@ -31,8 +30,8 @@ Recommended to use for Heading and Logo designs.
 + Add Katakana / Hiragana set
 
 ## Source
-Kunika made in FontForge.
-You can edit `.sfd` files.
+Kunika made in Glyphs.
+You can edit `.glyphs` files.
 
 
 ## License
