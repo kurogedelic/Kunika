@@ -1,7 +1,5 @@
-# [Kunika](https://kurogedelic.github.io/Kunika/)
+# [Kunika](https://www.behance.net/gallery/150992255/Kunika-Neo-Geometrik-Grotesque-%28Free-Font%29)
 Kunika is Neo-Geometric font.
-
-[Demo Page](https://kurogedelic.github.io/Kunika/)
 
 
 ## License
