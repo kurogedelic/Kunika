@@ -7,4 +7,4 @@ Kunika is under OTF 1.1.
 
 ## Impressions
 Made by Leo Kuroshita.
-Made with FontForge, FontSelf, FontLab.
+Made with Glyphs app.
